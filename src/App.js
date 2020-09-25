@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BaseLayout from "canvas/layout/baselayout";
+import NavBar from "canvas/navbar";
+import Header from "canvas/header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class PortfolioApp extends React.Component {
+  render() {
+    return (
+      <BaseLayout navigation={<NavBar />} footer="Footer">
+        <Header
+          title="Janani Arunachalam"
+          caption="Data Science | Machine Learning | Software Engineering"
+        />
+      </BaseLayout>
+    );
+  }
 }
 
-export default App;
+export default PortfolioApp;
