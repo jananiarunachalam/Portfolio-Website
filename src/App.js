@@ -6,6 +6,7 @@ import Projects from "canvas/projects";
 import Skills from "canvas/skills";
 import Experience from "canvas/experience";
 import Footer from "canvas/footer";
+import About from "canvas/about";
 
 class PortfolioApp extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class PortfolioApp extends React.Component {
         <Projects />
         <Skills />
         <Experience />
+        <About />
       </BaseLayout>
     );
   }

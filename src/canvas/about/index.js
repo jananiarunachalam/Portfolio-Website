@@ -7,7 +7,7 @@ const useStyles = makeStyles(
     root: {},
     main: {
       minHeight: 440,
-      background: "#C4C4C4",
+      background: "#f7f5f3",
       color: "#DB4343",
       padding: theme.spacing(2, 4),
     },
@@ -15,10 +15,10 @@ const useStyles = makeStyles(
   { index: 1 }
 );
 
-const Experience = ({ title, caption }) => {
+const About = ({ title, caption }) => {
   const cl = useStyles();
   return (
-    <Grid item classes={{ root: cl.root }} component="section" id="experience">
+    <Grid item classes={{ root: cl.root }} component="section" id="about">
       <Paper classes={{ root: cl.main }} square elevation={0}>
         <Typography variant="h3">title</Typography>
         <Typography variant="body1">subtitle</Typography>
@@ -27,4 +27,4 @@ const Experience = ({ title, caption }) => {
   );
 };
 
-export default Experience;
+export default About;

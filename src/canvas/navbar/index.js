@@ -23,7 +23,7 @@ const NavBar = () => {
         <strong>Janani</strong>
       </Typography>
       <div className={classes.fillSpace}></div>
-      <NavLink url="#about" label="about" active />
+      <NavLink url="#about" label="about" />
       <NavLink url="#projects" label="projects" />
       <NavLink url="#skills" label="skills" />
       <NavLink url="#experience" label="experience" />
