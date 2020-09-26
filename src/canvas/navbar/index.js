@@ -4,10 +4,7 @@ import NavLink from "./navlink";
 import { makeStyles } from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
-  root: {},
-  title: {
-    marginLeft: theme.spacing(1),
-  },
+  root: { padding: theme.spacing(1, 4) },
   fillSpace: {
     flexGrow: 1,
   },
@@ -21,10 +18,9 @@ const useStyle = makeStyles((theme) => ({
 const NavBar = () => {
   const classes = useStyle();
   return (
-    <Toolbar>
-      <Avatar alt="Janani Arunachalam" />
-      <Typography classes={{ root: classes.title }}>
-        Janani Arunachalam
+    <Toolbar classes={{ root: classes.root }}>
+      <Typography>
+        <strong>Janani</strong>
       </Typography>
       <div className={classes.fillSpace}></div>
       <NavLink url="#" label="about" active />
