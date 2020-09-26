@@ -3,6 +3,7 @@ import BaseLayout from "canvas/layout/baselayout";
 import NavBar from "canvas/navbar";
 import Header from "canvas/header";
 import Projects from "canvas/projects";
+import Skills from "canvas/skills";
 
 class PortfolioApp extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class PortfolioApp extends React.Component {
           caption="Data Science | Machine Learning | Software Engineering"
         />
         <Projects />
+        <Skills />
       </BaseLayout>
     );
   }
