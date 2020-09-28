@@ -1,5 +1,12 @@
 import React from "react";
-import { Grid, makeStyles, CssBaseline } from "@material-ui/core";
+import {
+  Grid,
+  makeStyles,
+  CssBaseline,
+  ThemeProvider,
+  createMuiTheme,
+  responsiveFontSizes,
+} from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
   root: {

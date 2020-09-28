@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Paper, Box, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(
@@ -14,18 +14,21 @@ const useStyles = makeStyles(
       padding: theme.spacing(2, 4),
       borderRadius: theme.spacing(4),
     },
+    skills: {
+      marginBottom: theme.spacing(2),
+    },
   }),
   { index: 1 }
 );
 
-const Skills = ({ title, caption }) => {
+const Skills = ({ children }) => {
   const cl = useStyles();
   return (
     <Grid item classes={{ root: cl.root }} component="section" id="skills">
-      <Paper classes={{ root: cl.main }} elevation={0}>
-        <Typography variant="h3">title</Typography>
-        <Typography variant="body1">subtitle</Typography>
-      </Paper>
+      <Typography classes={{ root: cl.skills }} variant="h3">
+        Skills
+      </Typography>
+      {children}
     </Grid>
   );
 };
