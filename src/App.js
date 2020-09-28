@@ -18,7 +18,21 @@ class PortfolioApp extends React.Component {
           title="Janani Arunachalam"
           caption="Data Science | Machine Learning | Software Engineering"
         />
-        <Projects />
+        <Projects
+          title="Toss It Right"
+          caption="Recycling app that lets users take snaps, segregates trash, provides recycling instructions"
+          tags={[
+            "python",
+            "matplotlib",
+            "fastai",
+            "Image Classification",
+            "AWS Sagemaker",
+            "AWS Lambda",
+            "Amazon API Gateway",
+            "Amazon EC2",
+            "Javascript",
+          ]}
+        />
         <Skills>
           <SkillRow title="Data Science">
             <AddSkill color="#A7ACD9" title="Py" caption="Python"></AddSkill>
